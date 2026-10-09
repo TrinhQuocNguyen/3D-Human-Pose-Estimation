@@ -49,7 +49,7 @@ A citation entry will be added here when the paper is published.
 
 ## Contact
 
-Trinh Quoc Nguyen (corresponding author), trinhnq.3@dhv.edu.vn
+Trinh Quoc Nguyen (corresponding author)
 
 Editors and reviewers who need the code during the review can request access from the
 corresponding author.
