@@ -7,7 +7,7 @@
 
 Generative lifters for monocular 3D human pose estimation, such as D3DP and FMPose3D, draw many
 candidate poses (hypotheses) for each input and combine them according to how well each one
-reprojects onto the observed 2D keypoints. Reprojection needs the position of the pose in camera
+reprojects onto the observed 2D keypoints. Reprojection needs to know where the pose sits in camera
 space, which these models do not predict. In the released evaluation code of both methods, this
 position (the root translation) comes from the 3D ground truth of each test sample.
 The reported metric is still computed correctly; the question is how much of the benefit of the
@@ -15,10 +15,11 @@ aggregation step remains when the ground truth is not available, as in deploymen
 
 The paper replaces the ground-truth root translation with a least-squares estimate solved from the
 2D keypoints, changes nothing else, and measures the effect on the full Human3.6M test set with the
-authors' released checkpoints. It then bounds what several test-time strategies can recover without
-the ground truth, and reports a configuration of the released FMPose3D model that is more accurate
-for detector-based 2D input while using fewer network evaluations. With ground-truth 2D input, that
-configuration is not better, and the paper states this condition with the result.
+authors' released checkpoints. It then measures how much several test-time strategies recover when
+the ground truth is unavailable, and reports two changes to the released FMPose3D settings that make the
+deployable configuration more accurate with detector-based 2D input while using fewer network
+evaluations. One of the two changes should not be used with ground-truth 2D input, and the paper
+states this condition with the result.
 
 ## What will be released
 
