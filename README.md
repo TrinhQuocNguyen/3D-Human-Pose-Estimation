@@ -1,4 +1,4 @@
-# Test-Time Ground-Truth Dependency in Reprojection-Based Multi-Hypothesis 3D Human Pose Estimation: Measurement and a Corrected Configuration
+# Test-Time Ground-Truth Dependency in Reprojection-Based Multi-Hypothesis 3D Human Pose Estimation: Measurement and an Improved Deployable Configuration
 
 > **Status:** the paper is under peer review. The code and result files will be published in this
 > repository after the paper is accepted. Until then, the repository contains only this page.
